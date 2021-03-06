@@ -10,7 +10,7 @@ import UIKit
 class UserInfoViewController: ViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var birthdayLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,6 @@ class UserInfoViewController: ViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.nameLabel.text = UserInformation.shared.name
-        self.ageLabel.text = UserInformation.shared.age
+        self.birthdayLabel.text = UserInformation.shared.birthday
     }
 }
